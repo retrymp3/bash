@@ -10,7 +10,7 @@ do
 	do="$HOME/Downloads"
 	year=$(date +%Y)
 	dy="$HOME/Downloads/$year"
-	year_dir=$(date +%Y -r $d)
+	year_dir=$(date +%Y -r "$d")
 	
 	if [ -f "$d" ] && [ -d "$do/$year_dir" ] && [ -d "$do/$year_dir/$date_dir" ]
 	then
