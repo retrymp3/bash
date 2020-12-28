@@ -1,10 +1,5 @@
 #!/bin/bash
 
-echo Give a string: 
-read n
+read -p "Give a string: " n
 
-echo "`expr length $n`"
-
-
-
-
+expr length $n
