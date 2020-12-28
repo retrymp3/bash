@@ -1,14 +1,13 @@
 #!/bin/bash
 
-echo "Give a number: "
-read n
+read -p "Give a number: " n
 
 var=1
 
 while [ $n -gt 1 ]
 do
-	var=$(($var * $n))
-	n=$((n-1))
+	var=`expr $var \* $n`
+	n=`expr $n - 1`
 done
 
 echo $var
