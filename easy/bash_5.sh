@@ -2,7 +2,7 @@
 
 read -p "Enter a string: " s
 
-if [ "$s" == "$(echo "$s" | rev)" ]
+if [ "$s" == "`echo "$s" | rev`" ]
 then
 	echo "Is a palindrome"
 
